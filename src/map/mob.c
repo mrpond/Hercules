@@ -2750,7 +2750,7 @@ static int mob_dead(struct mob_data *md, struct block_list *src, int type)
 
 					drop_rate_bonus += sd->dropaddrace[md->status.race] + (is_boss(src) ? sd->dropaddrace[RC_BOSS] : sd->dropaddrace[RC_NONBOSS]); // bonus2 bDropAddRace[KeiKun]
 
-					drop_rate_bonus += mob_drop_bonus_from_sc(sd);
+					drop_rate_bonus += mob->drop_bonus_from_sc(sd);
 					
 					if (drop_rate_bonus != 100) {
 						drop_rate = (int)(0.5 + drop_rate * drop_rate_bonus / 100.);

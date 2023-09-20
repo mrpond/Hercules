@@ -25,7 +25,6 @@
 
 /* GENERATED FILE DO NOT EDIT */
 
-HPMHooks.source.HCache = *HCache;
 HPMHooks.source.achievement = *achievement;
 HPMHooks.source.atcommand = *atcommand;
 HPMHooks.source.battle = *battle;
@@ -50,6 +49,7 @@ HPMHooks.source.grader = *grader;
 HPMHooks.source.grfio = *grfio;
 HPMHooks.source.guild = *guild;
 HPMHooks.source.gstorage = *gstorage;
+HPMHooks.source.HCache = *HCache;
 HPMHooks.source.homun = *homun;
 HPMHooks.source.instance = *instance;
 HPMHooks.source.intif = *intif;

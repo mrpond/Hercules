@@ -26,12 +26,6 @@
 /* GENERATED FILE DO NOT EDIT */
 
 struct {
-	struct HPMHookPoint *HP_HCache_init_pre;
-	struct HPMHookPoint *HP_HCache_init_post;
-	struct HPMHookPoint *HP_HCache_check_pre;
-	struct HPMHookPoint *HP_HCache_check_post;
-	struct HPMHookPoint *HP_HCache_open_pre;
-	struct HPMHookPoint *HP_HCache_open_post;
 	struct HPMHookPoint *HP_achievement_init_pre;
 	struct HPMHookPoint *HP_achievement_init_post;
 	struct HPMHookPoint *HP_achievement_final_pre;
@@ -3010,6 +3004,12 @@ struct {
 	struct HPMHookPoint *HP_gstorage_saved_post;
 	struct HPMHookPoint *HP_gstorage_create_pre;
 	struct HPMHookPoint *HP_gstorage_create_post;
+	struct HPMHookPoint *HP_HCache_init_pre;
+	struct HPMHookPoint *HP_HCache_init_post;
+	struct HPMHookPoint *HP_HCache_check_pre;
+	struct HPMHookPoint *HP_HCache_check_post;
+	struct HPMHookPoint *HP_HCache_open_pre;
+	struct HPMHookPoint *HP_HCache_open_post;
 	struct HPMHookPoint *HP_homun_init_pre;
 	struct HPMHookPoint *HP_homun_init_post;
 	struct HPMHookPoint *HP_homun_final_pre;
@@ -4420,6 +4420,8 @@ struct {
 	struct HPMHookPoint *HP_mob_damage_post;
 	struct HPMHookPoint *HP_mob_dead_pre;
 	struct HPMHookPoint *HP_mob_dead_post;
+	struct HPMHookPoint *HP_mob_drop_bonus_from_sc_pre;
+	struct HPMHookPoint *HP_mob_drop_bonus_from_sc_post;
 	struct HPMHookPoint *HP_mob_revive_pre;
 	struct HPMHookPoint *HP_mob_revive_post;
 	struct HPMHookPoint *HP_mob_guardian_guildchange_pre;
@@ -7557,12 +7559,6 @@ struct {
 } list;
 
 struct {
-	int HP_HCache_init_pre;
-	int HP_HCache_init_post;
-	int HP_HCache_check_pre;
-	int HP_HCache_check_post;
-	int HP_HCache_open_pre;
-	int HP_HCache_open_post;
 	int HP_achievement_init_pre;
 	int HP_achievement_init_post;
 	int HP_achievement_final_pre;
@@ -10541,6 +10537,12 @@ struct {
 	int HP_gstorage_saved_post;
 	int HP_gstorage_create_pre;
 	int HP_gstorage_create_post;
+	int HP_HCache_init_pre;
+	int HP_HCache_init_post;
+	int HP_HCache_check_pre;
+	int HP_HCache_check_post;
+	int HP_HCache_open_pre;
+	int HP_HCache_open_post;
 	int HP_homun_init_pre;
 	int HP_homun_init_post;
 	int HP_homun_final_pre;
@@ -11951,6 +11953,8 @@ struct {
 	int HP_mob_damage_post;
 	int HP_mob_dead_pre;
 	int HP_mob_dead_post;
+	int HP_mob_drop_bonus_from_sc_pre;
+	int HP_mob_drop_bonus_from_sc_post;
 	int HP_mob_revive_pre;
 	int HP_mob_revive_post;
 	int HP_mob_guardian_guildchange_pre;
@@ -15088,7 +15092,6 @@ struct {
 } count;
 
 struct {
-	struct HCache_interface HCache;
 	struct achievement_interface achievement;
 	struct atcommand_interface atcommand;
 	struct battle_interface battle;
@@ -15113,6 +15116,7 @@ struct {
 	struct grfio_interface grfio;
 	struct guild_interface guild;
 	struct guild_storage_interface gstorage;
+	struct HCache_interface HCache;
 	struct homunculus_interface homun;
 	struct instance_interface instance;
 	struct intif_interface intif;

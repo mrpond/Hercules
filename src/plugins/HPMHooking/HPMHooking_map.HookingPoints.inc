@@ -26,10 +26,6 @@
 /* GENERATED FILE DO NOT EDIT */
 
 struct HookingPointData HookingPoints[] = {
-/* HCache_interface */
-	{ HP_POP(HCache->init, HP_HCache_init) },
-	{ HP_POP(HCache->check, HP_HCache_check) },
-	{ HP_POP(HCache->open, HP_HCache_open) },
 /* achievement_interface */
 	{ HP_POP(achievement->init, HP_achievement_init) },
 	{ HP_POP(achievement->final, HP_achievement_final) },
@@ -1543,6 +1539,10 @@ struct HookingPointData HookingPoints[] = {
 	{ HP_POP(gstorage->save, HP_gstorage_save) },
 	{ HP_POP(gstorage->saved, HP_gstorage_saved) },
 	{ HP_POP(gstorage->create, HP_gstorage_create) },
+/* HCache_interface */
+	{ HP_POP(HCache->init, HP_HCache_init) },
+	{ HP_POP(HCache->check, HP_HCache_check) },
+	{ HP_POP(HCache->open, HP_HCache_open) },
 /* homunculus_interface */
 	{ HP_POP(homun->init, HP_homun_init) },
 	{ HP_POP(homun->final, HP_homun_final) },
@@ -2265,6 +2265,7 @@ struct HookingPointData HookingPoints[] = {
 	{ HP_POP(mob->log_damage, HP_mob_log_damage) },
 	{ HP_POP(mob->damage, HP_mob_damage) },
 	{ HP_POP(mob->dead, HP_mob_dead) },
+	{ HP_POP(mob->drop_bonus_from_sc, HP_mob_drop_bonus_from_sc) },
 	{ HP_POP(mob->revive, HP_mob_revive) },
 	{ HP_POP(mob->guardian_guildchange, HP_mob_guardian_guildchange) },
 	{ HP_POP(mob->random_class, HP_mob_random_class) },
